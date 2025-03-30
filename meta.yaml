@@ -21,12 +21,12 @@ proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: CN_speednode_0001
-  port: 31800
+  port: 10860
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
+  server: test123.zlqhdns.top
   servername: www.nvidia.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -45,8 +45,21 @@ proxies:
     headers:
       Host: in.youlingkais.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-256-cfb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: CN_speednode_0003
+  port: 31800
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  name: CN_speednode_0004
   obfs: tls1.2_ticket_auth
   obfs-param: sg2-cdn-route.couldflare-cdn.com
   password: uiACqrIr
@@ -56,19 +69,6 @@ proxies:
   server: cm2.xcone.xyz
   type: ssr
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: CN_speednode_0004
-  port: 10860
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: CN_speednode_0005
@@ -82,43 +82,9 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: CN_speednode_0006
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 11003
-  server: 61.172.235.22
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: CN_speednode_0007
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12363
-  server: 183.240.255.75
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: CN_speednode_0008
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 11004
-  server: 61.172.235.22
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: CN_speednode_0009
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: CN_speednode_0010
   port: 24318
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
@@ -129,9 +95,36 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: CN_speednode_0007
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 12363
+  server: 183.240.255.75
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: CN_speednode_0011
+  name: CN_speednode_0008
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: CN_speednode_0009
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 12366
+  server: 183.240.255.75
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: CN_speednode_0010
   port: 50452
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
@@ -143,43 +136,14 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: CN_speednode_0012
+  name: CN_speednode_0011
   password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12366
-  server: 183.240.255.75
+  port: 11003
+  server: 61.172.235.22
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: CN_speednode_0013
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12353
-  server: 183.232.229.164
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: CN_speednode_0014
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12359
-  server: 183.232.229.164
-  type: ss
-  udp: true
-- name: FR_speednode_0015
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 185.16.110.107
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
 - client-fingerprint: chrome
-  name: GB_speednode_0016
+  name: GB_speednode_0012
   port: 80
   reality-opts:
     public-key: DZzAtolzThTEwEjUnyLN5lzhvzMtKPOAvPA8K8luAhE
@@ -191,21 +155,7 @@ proxies:
   type: vless
   udp: true
   uuid: 98d8274c-3159-7718-4042-19544c9d2ff6
-- name: GB_speednode_0017
-  network: ws
-  port: 443
-  server: 217.163.76.102
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: JP_speednode_0018
+- name: JP_speednode_0013
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: jp104-cdn-route.couldflare-cdn.com
@@ -213,21 +163,7 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: KR_speednode_0019
-  network: ws
-  port: 21291
-  server: 211.185.2.191
-  servername: edfgv.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edfgv.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: KR_speednode_0020
+- name: KR_speednode_0014
   network: ws
   port: 12361
   server: 222.119.17.97
@@ -241,35 +177,7 @@ proxies:
     headers:
       Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: KR_speednode_0021
-  network: ws
-  port: 16049
-  server: 121.135.67.36
-  servername: edfgv.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edfgv.aimercc.filegear-sg.me
-    path: /?ed=2560
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: KR_speednode_0022
-  port: 23333
-  reality-opts:
-    public-key: LGcYLmLcvwtfKuk_Qa_dy0N6YNz4szWReWug5fxAwh0
-    short-id: 15f7
-  server: 193.123.248.228
-  servername: www.yahoo.co.jp
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30f85233-d41e-4297-97c1-cfac047a948b
-- name: KR_speednode_0023
+- name: KR_speednode_0015
   network: ws
   port: 17774
   server: 220.116.147.73
@@ -283,21 +191,35 @@ proxies:
     headers:
       Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: KZ_speednode_0024
+- name: KR_speednode_0016
   network: ws
-  port: 443
-  server: 194.76.18.83
-  servername: in.youlingkais.filegear-sg.me
+  port: 21291
+  server: 211.185.2.191
+  servername: edfgv.aimercc.filegear-sg.me
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: in.youlingkais.filegear-sg.me
+      Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: NL_speednode_0025
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: KR_speednode_0017
+  port: 23333
+  reality-opts:
+    public-key: LGcYLmLcvwtfKuk_Qa_dy0N6YNz4szWReWug5fxAwh0
+    short-id: 15f7
+  server: 193.123.248.228
+  servername: www.yahoo.co.jp
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30f85233-d41e-4297-97c1-cfac047a948b
+- name: NL_speednode_0018
   network: ws
   port: 80
   server: 45.131.4.109
@@ -311,21 +233,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram@WangCai2/?ed=2560
-- name: NL_speednode_0026
-  network: ws
-  port: 8080
-  server: 45.131.4.33
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY
-- name: NL_speednode_0027
+- name: NL_speednode_0019
   network: ws
   port: 80
   server: 45.131.4.162
@@ -339,7 +247,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram@WangCai2
-- name: NL_speednode_0028
+- name: NL_speednode_0020
   network: ws
   port: 80
   server: 45.131.4.33
@@ -353,7 +261,7 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY
-- name: NL_speednode_0029
+- name: NL_speednode_0021
   network: ws
   port: 80
   server: 45.131.4.254
@@ -367,7 +275,21 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram@WangCai2
-- name: SG_speednode_0030
+- name: NL_speednode_0022
+  network: ws
+  port: 8080
+  server: 45.131.4.33
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY
+- name: SG_speednode_0023
   network: ws
   port: 8443
   server: 92.243.74.2
@@ -381,7 +303,7 @@ proxies:
     headers:
       Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: SG_speednode_0031
+- name: SG_speednode_0024
   network: ws
   port: 8443
   server: 27.50.49.177
@@ -395,7 +317,7 @@ proxies:
     headers:
       Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: TW_speednode_0032
+- name: TW_speednode_0025
   password: 82febca6-8856-41fe-84df-c8bda0b72c7b
   port: 2000
   server: tw3.akebi.cc
@@ -403,78 +325,7 @@ proxies:
   sni: hk03.akebi.cc
   type: hysteria2
   udp: true
-- name: US_speednode_0033
-  network: ws
-  port: 443
-  server: 63.141.128.58
-  servername: il.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: /?ed=2560
-- name: US_speednode_0034
-  network: ws
-  port: 443
-  server: pranab.ns.cloudflare.com
-  servername: edfgv.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edfgv.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: US_speednode_0035
-  network: ws
-  port: 443
-  server: 198.62.62.156
-  servername: il.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: /?ed=2560
-- name: US_speednode_0036
-  network: ws
-  port: 443
-  server: 63.141.128.100
-  servername: il.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: /?ed=2560
-- name: US_speednode_0037
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 63.141.128.177
-  servername: il.ylkszy.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: /?ed=2560
-- name: US_speednode_0038
+- name: US_speednode_0026
   network: ws
   port: 443
   server: thaddeus.ns.cloudflare.com
@@ -488,106 +339,7 @@ proxies:
     headers:
       Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: US_speednode_0039
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 63.141.128.218
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: US_speednode_0040
-  network: ws
-  port: 443
-  server: theo.ns.cloudflare.com
-  servername: edfgv.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edfgv.aimercc.filegear-sg.me
-    path: /?ed=2560
-- name: US_speednode_0041
-  network: ws
-  port: 443
-  server: decker.ns.cloudflare.com
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: US_speednode_0042
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: US_speednode_0043
-  network: ws
-  port: 443
-  server: dnschecker.org
-  servername: il.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: /?ed=2560
-- name: US_speednode_0044
-  network: ws
-  port: 443
-  server: 172.67.106.26
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: US_speednode_0045
-  network: ws
-  port: 443
-  server: www.4chan.org
-  servername: il.ylkszy.eu.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: il.ylkszy.eu.org
-    path: /?ed=2560
-- name: US_speednode_0046
+- name: US_speednode_0027
   network: ws
   port: 443
   server: arvind.ns.cloudflare.com
@@ -601,22 +353,35 @@ proxies:
     headers:
       Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: US_speednode_0047
+- name: US_speednode_0028
   network: ws
-  packet-encoding: xudp
   port: 443
-  server: 135.84.76.115
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: false
+  server: pranab.ns.cloudflare.com
+  servername: edfgv.aimercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: in.youlingkais.filegear-sg.me
+      Host: edfgv.aimercc.filegear-sg.me
     path: /?ed=2560
-- name: US_speednode_0048
+- name: US_speednode_0029
+  network: ws
+  port: 443
+  server: theo.ns.cloudflare.com
+  servername: edfgv.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edfgv.aimercc.filegear-sg.me
+    path: /?ed=2560
+- name: US_speednode_0030
   network: ws
   port: 80
   server: support.zoom.us
@@ -645,43 +410,25 @@ proxy-groups:
   - CN_speednode_0009
   - CN_speednode_0010
   - CN_speednode_0011
-  - CN_speednode_0012
-  - CN_speednode_0013
-  - CN_speednode_0014
-  - FR_speednode_0015
-  - GB_speednode_0016
-  - GB_speednode_0017
-  - JP_speednode_0018
-  - KR_speednode_0019
-  - KR_speednode_0020
-  - KR_speednode_0021
-  - KR_speednode_0022
-  - KR_speednode_0023
-  - KZ_speednode_0024
-  - NL_speednode_0025
-  - NL_speednode_0026
-  - NL_speednode_0027
-  - NL_speednode_0028
-  - NL_speednode_0029
-  - SG_speednode_0030
-  - SG_speednode_0031
-  - TW_speednode_0032
-  - US_speednode_0033
-  - US_speednode_0034
-  - US_speednode_0035
-  - US_speednode_0036
-  - US_speednode_0037
-  - US_speednode_0038
-  - US_speednode_0039
-  - US_speednode_0040
-  - US_speednode_0041
-  - US_speednode_0042
-  - US_speednode_0043
-  - US_speednode_0044
-  - US_speednode_0045
-  - US_speednode_0046
-  - US_speednode_0047
-  - US_speednode_0048
+  - GB_speednode_0012
+  - JP_speednode_0013
+  - KR_speednode_0014
+  - KR_speednode_0015
+  - KR_speednode_0016
+  - KR_speednode_0017
+  - NL_speednode_0018
+  - NL_speednode_0019
+  - NL_speednode_0020
+  - NL_speednode_0021
+  - NL_speednode_0022
+  - SG_speednode_0023
+  - SG_speednode_0024
+  - TW_speednode_0025
+  - US_speednode_0026
+  - US_speednode_0027
+  - US_speednode_0028
+  - US_speednode_0029
+  - US_speednode_0030
   type: select
 - interval: 300
   name: "\u267B\uFE0F automatic"
@@ -697,43 +444,25 @@ proxy-groups:
   - CN_speednode_0009
   - CN_speednode_0010
   - CN_speednode_0011
-  - CN_speednode_0012
-  - CN_speednode_0013
-  - CN_speednode_0014
-  - FR_speednode_0015
-  - GB_speednode_0016
-  - GB_speednode_0017
-  - JP_speednode_0018
-  - KR_speednode_0019
-  - KR_speednode_0020
-  - KR_speednode_0021
-  - KR_speednode_0022
-  - KR_speednode_0023
-  - KZ_speednode_0024
-  - NL_speednode_0025
-  - NL_speednode_0026
-  - NL_speednode_0027
-  - NL_speednode_0028
-  - NL_speednode_0029
-  - SG_speednode_0030
-  - SG_speednode_0031
-  - TW_speednode_0032
-  - US_speednode_0033
-  - US_speednode_0034
-  - US_speednode_0035
-  - US_speednode_0036
-  - US_speednode_0037
-  - US_speednode_0038
-  - US_speednode_0039
-  - US_speednode_0040
-  - US_speednode_0041
-  - US_speednode_0042
-  - US_speednode_0043
-  - US_speednode_0044
-  - US_speednode_0045
-  - US_speednode_0046
-  - US_speednode_0047
-  - US_speednode_0048
+  - GB_speednode_0012
+  - JP_speednode_0013
+  - KR_speednode_0014
+  - KR_speednode_0015
+  - KR_speednode_0016
+  - KR_speednode_0017
+  - NL_speednode_0018
+  - NL_speednode_0019
+  - NL_speednode_0020
+  - NL_speednode_0021
+  - NL_speednode_0022
+  - SG_speednode_0023
+  - SG_speednode_0024
+  - TW_speednode_0025
+  - US_speednode_0026
+  - US_speednode_0027
+  - US_speednode_0028
+  - US_speednode_0029
+  - US_speednode_0030
   type: url-test
   url: https://www.google.com/favicon.ico
 rules:
